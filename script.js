@@ -2,6 +2,7 @@ const translations = {
     en: {
         role: "Senior Project Manager / Business Analyst",
         citizenship: "Citizenship: Poland (EU), Russia",
+        summary: "Experienced IT PMP Project Manager and Analyst with unique and broad international experience in financial, e-commerce, aviation, security&AI and logistic domains.",
         contacts: "Contacts",
         phone: "Phone:",
         email: "Email:",
@@ -13,6 +14,11 @@ const translations = {
         databases: "Databases",
         programming: "Programming",
         languages: "Languages",
+        "lang-pl": "Polish",
+        "lang-en": "English",
+        "lang-ru": "Russian",
+        "lang-de": "German",
+        "level-native": "Native",
         education: "Education",
         "edu1-title": "Postgraduate, IT Project Management",
         "edu2-title": "Computer Networks, Systems and Computers",
@@ -22,6 +28,7 @@ const translations = {
         "exp2-title": "Senior Project Manager",
         "exp3-title": "Senior Business Analyst / Proxy-Product Owner",
         "exp4-title": "Senior Business Analyst / Proxy-Product Owner",
+        "contact-note": "Contact me regarding previous years experience",
         "exp1-results": [
             "Reduced IDM system costs by 63% (60K→22K) and MDM solution costs by 93% (30K→2K)",
             "Optimized Atlassian operational costs by 60% (5K→2K/month)",
@@ -49,59 +56,10 @@ const translations = {
             "Collaborated with architecture committee"
         ]
     },
-    de: {
-        role: "Senior Projektmanager / Business Analyst",
-        citizenship: "Staatsangehörigkeit: Polen (EU), Russland",
-        contacts: "Kontakte",
-        phone: "Telefon:",
-        email: "E-Mail:",
-        skills: "Fähigkeiten",
-        sectors: "Branchenkenntnisse",
-        methodologies: "PM-Methoden",
-        ba: "Business Analysis",
-        tech: "Technologien",
-        databases: "Datenbanken",
-        programming: "Programmierung",
-        languages: "Sprachen",
-        education: "Ausbildung",
-        "edu1-title": "Postgradual, IT-Projektmanagement",
-        "edu2-title": "Computernetzwerke, Systeme und Computer",
-        certificates: "Schulungen & Zertifikate",
-        experience: "Berufserfahrung",
-        "exp1-title": "Projektmanager",
-        "exp2-title": "Senior Projektmanager",
-        "exp3-title": "Senior Business Analyst / Proxy-Product Owner",
-        "exp4-title": "Senior Business Analyst / Proxy-Product Owner",
-        "exp1-results": [
-            "Reduzierte IDM-Systemkosten um 63% (60K→22K) und MDM-Lösung um 93% (30K→2K)",
-            "Optimiert Atlassian-Betriebskosten um 60% (5K→2K/Monat)",
-            "Gesteuerte Lieferantenanalyse, Systemimplementierungen (ERP, CRM, E-Mail/DNS)",
-            "Leitete IT-Projekte für VR-Schulungen (LMS, Website, MDM, KI-Assistent)",
-            "Mentorierte KI-MVP-Schulungsassistent"
-        ],
-        "exp2-results": [
-            "Leitete mehrere Integrationsprojekte und dedizierte Teams",
-            "Optimierte Projektabwicklung mit Kanban und SCRUM",
-            "Definierte Umfang, Roadmaps und Kommunikation für C-Level-Stakeholder",
-            "Verwaltete DevOps/DBE-Teams (SRE, Azure, Kubernetes)",
-            "Erfolgreich abgeschlossen 3 Akquisitionsprojekte"
-        ],
-        "exp3-results": [
-            "Förderte Lösungen der Finanzabteilung",
-            "Entwarf und dokumentierte BCPO-System",
-            "Implementierte UIpath/RPA-Lösungen",
-            "Moderierte PI-Planung mit SAF5.0",
-            "Lieferte mehrere Releases pünktlich"
-        ],
-        "exp4-results": [
-            "Leitete 3 komplexe FinTech-Projekte",
-            "Definierte Umfang in DeFi-, Zahlungslösungs-, Cloud-Domänen",
-            "Zusammenarbeit mit Architekturausschuss"
-        ]
-    },
     ru: {
         role: "Старший менеджер проектов / Бизнес-аналитик",
         citizenship: "Гражданство: Польша (ЕС), Россия",
+        summary: "Опытный IT-менеджер проектов PMP и аналитик с уникальным и широким международным опытом в финансовых, электронной коммерции, авиационных, безопасности&AI и логистических доменах.",
         contacts: "Контакты",
         phone: "Телефон:",
         email: "Электронная почта:",
@@ -113,6 +71,11 @@ const translations = {
         databases: "Базы данных",
         programming: "Программирование",
         languages: "Языки",
+        "lang-pl": "Польский",
+        "lang-en": "Английский",
+        "lang-ru": "Русский",
+        "lang-de": "Немецкий",
+        "level-native": "Родной",
         education: "Образование",
         "edu1-title": "Аспирантура, Управление IT-проектами",
         "edu2-title": "Компьютерные сети, системы и компьютеры",
@@ -122,6 +85,7 @@ const translations = {
         "exp2-title": "Старший менеджер проектов",
         "exp3-title": "Старший бизнес-аналитик / Proxy-Product Owner",
         "exp4-title": "Старший бизнес-аналитик / Proxy-Product Owner",
+        "contact-note": "Свяжитесь со мной по поводу опыта предыдущих лет",
         "exp1-results": [
             "Снизил затраты на IDM-систему на 63% (60K→22K) и на MDM-решение на 93% (30K→2K)",
             "Оптимизировал операционные затраты Atlassian на 60% (5K→2K/месяц)",
@@ -152,6 +116,7 @@ const translations = {
     pl: {
         role: "Starszy kierownik projektów / Analityk biznesowy",
         citizenship: "Obywatelstwo: Polska (UE), Rosja",
+        summary: "Doświadczony kierownik projektów IT PMP i analityk z unikalnym i szerokim międzynarodowym doświadczeniem w dziedzinach finansów, e-commerce, lotnictwa, bezpieczeństwa&AI oraz logistyki.",
         contacts: "Kontakt",
         phone: "Telefon:",
         email: "E-mail:",
@@ -163,6 +128,11 @@ const translations = {
         databases: "Bazy danych",
         programming: "Programowanie",
         languages: "Języki",
+        "lang-pl": "Polski",
+        "lang-en": "Angielski",
+        "lang-ru": "Rosyjski",
+        "lang-de": "Niemiecki",
+        "level-native": "Ojczysty",
         education: "Wykształcenie",
         "edu1-title": "Studia podyplomowe, Zarządzanie projektami IT",
         "edu2-title": "Sieci komputerowe, systemy i komputery",
@@ -172,6 +142,7 @@ const translations = {
         "exp2-title": "Starszy kierownik projektów",
         "exp3-title": "Starszy analityk biznesowy / Proxy-Product Owner",
         "exp4-title": "Starszy analityk biznesowy / Proxy-Product Owner",
+        "contact-note": "Skontaktuj się ze mną dotycząc doświadczenia z poprzednich lat",
         "exp1-results": [
             "Zmniejszył koszty systemu IDM o 63% (60K→22K) i rozwiązania MDM o 93% (30K→2K)",
             "Zoptymalizował koszty operacyjne Atlassian o 60% (5K→2K/miesiąc)",
@@ -197,6 +168,63 @@ const translations = {
             "Kierował 3 złożonymi projektami FinTech",
             "Definiował zakres w domenach DeFi, rozwiązań płatniczych, chmurowych",
             "Współpracował z komitetem architektonicznym"
+        ]
+    },
+    de: {
+        role: "Senior Projektmanager / Business Analyst",
+        citizenship: "Staatsangehörigkeit: Polen (EU), Russland",
+        summary: "Erfahrener IT PMP-Projektmanager und Analyst mit einzigartiger und breiter internationaler Erfahrung in den Bereichen Finanzen, E-Commerce, Luftfahrt, Sicherheit&KI und Logistik.",
+        contacts: "Kontakte",
+        phone: "Telefon:",
+        email: "E-Mail:",
+        skills: "Fähigkeiten",
+        sectors: "Branchenkenntnisse",
+        methodologies: "PM-Methoden",
+        ba: "Business Analysis",
+        tech: "Technologien",
+        databases: "Datenbanken",
+        programming: "Programmierung",
+        languages: "Sprachen",
+        "lang-pl": "Polnisch",
+        "lang-en": "Englisch",
+        "lang-ru": "Russisch",
+        "lang-de": "Deutsch",
+        "level-native": "Muttersprache",
+        education: "Ausbildung",
+        "edu1-title": "Postgradual, IT-Projektmanagement",
+        "edu2-title": "Computernetzwerke, Systeme und Computer",
+        certificates: "Schulungen & Zertifikate",
+        experience: "Berufserfahrung",
+        "exp1-title": "Projektmanager",
+        "exp2-title": "Senior Projektmanager",
+        "exp3-title": "Senior Business Analyst / Proxy-Product Owner",
+        "exp4-title": "Senior Business Analyst / Proxy-Product Owner",
+        "contact-note": "Kontaktieren Sie mich bezüglich der Erfahrung der vorherigen Jahre",
+        "exp1-results": [
+            "Reduzierte IDM-Systemkosten um 63% (60K→22K) und MDM-Lösung um 93% (30K→2K)",
+            "Optimiert Atlassian-Betriebskosten um 60% (5K→2K/Monat)",
+            "Gesteuerte Lieferantenanalyse, Systemimplementierungen (ERP, CRM, E-Mail/DNS)",
+            "Leitete IT-Projekte für VR-Schulungen (LMS, Website, MDM, KI-Assistent)",
+            "Mentorierte KI-MVP-Schulungsassistent"
+        ],
+        "exp2-results": [
+            "Leitete mehrere Integrationsprojekte und dedizierte Teams",
+            "Optimierte Projektabwicklung mit Kanban und SCRUM",
+            "Definierte Umfang, Roadmaps und Kommunikation für C-Level-Stakeholder",
+            "Verwaltete DevOps/DBE-Teams (SRE, Azure, Kubernetes)",
+            "Erfolgreich abgeschlossen 3 Akquisitionsprojekte"
+        ],
+        "exp3-results": [
+            "Förderte Lösungen der Finanzabteilung",
+            "Entwarf und dokumentierte BCPO-System",
+            "Implementierte UIpath/RPA-Lösungen",
+            "Moderierte PI-Planung mit SAF5.0",
+            "Lieferte mehrere Releases pünktlich"
+        ],
+        "exp4-results": [
+            "Leitete 3 komplexe FinTech-Projekte",
+            "Definierte Umfang in DeFi-, Zahlungslösungs-, Cloud-Domänen",
+            "Zusammenarbeit mit Architekturausschuss"
         ]
     }
 };

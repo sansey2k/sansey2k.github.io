@@ -52,6 +52,13 @@ header {
     font-size: 1rem;
 }
 
+.header-left .summary {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+
 .header-right {
     display: flex;
     flex-direction: column;
@@ -182,9 +189,17 @@ section h3 {
 }
 
 .skill-category {
-    background: #f8f9fa;
-    padding: 18px;
-    border-radius: 12px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 22px 20px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.skill-category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102,126,234,0.12);
 }
 
 .skill-category h4 {
@@ -314,6 +329,17 @@ section h3 {
 
 .exp-results li {
     margin-bottom: 8px;
+}
+
+.contact-note {
+    text-align: center;
+    margin-top: 25px;
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border-radius: 12px;
+    color: #667eea;
+    font-weight: 600;
+    font-size: 1.05rem;
 }
 
 footer {
