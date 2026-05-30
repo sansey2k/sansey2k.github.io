@@ -3,39 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleksandr Zykin - Personal Page</title>
-    <meta name="description" content="Personal page of Aleksandr Zykin - contacts and information">
-    <meta name="keywords" content="Aleksandr Zykin, Александр Зыкин, contacts, personal page">
+    <title>Aleksandr Zykin - Senior Project Manager / Business Analyst</title>
+    <meta name="description" content="Aleksandr Zykin - Senior Project Manager and Business Analyst. CV, skills, experience and contacts.">
+    <meta name="keywords" content="Aleksandr Zykin, Александр Зыкин, Project Manager, Business Analyst, PM, BA, Fintech, Banking, Aviation, Healthcare">
     <meta name="author" content="Aleksandr Zykin">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Aleksandr Zykin</h1>
-            <div class="language-selector">
-                <button class="lang-btn active" data-lang="en">EN</button>
-                <button class="lang-btn" data-lang="ru">RU</button>
-                <button class="lang-btn" data-lang="pl">PL</button>
-                <button class="lang-btn" data-lang="de">DE</button>
+            <div class="header-content">
+                <div class="profile-info">
+                    <h1>Aleksandr Zykin</h1>
+                    <p class="title" data-key="role">Senior Project Manager / Business Analyst</p>
+                </div>
+                <div class="language-dropdown">
+                    <button class="dropdown-btn" id="langDropdownBtn">
+                        <span class="flag">🇬🇧</span> EN
+                        <span class="arrow">▼</span>
+                    </button>
+                    <div class="dropdown-content" id="langDropdown">
+                        <button class="lang-option" data-lang="en">
+                            <span class="flag">🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="ru">
+                            <span class="flag">🇷🇺</span> Русский
+                        </button>
+                        <button class="lang-option" data-lang="pl">
+                            <span class="flag">🇵🇱</span> Polski
+                        </button>
+                        <button class="lang-option" data-lang="de">
+                            <span class="flag">🇩🇪</span> Deutsch
+                        </button>
+                    </div>
+                </div>
             </div>
         </header>
 
         <main>
             <section class="hero">
-                <h2 data-key="welcome">Welcome to my personal page</h2>
-                <p data-key="description">Here you can find my contact information</p>
+                <p class="citizenship" data-key="citizenship">Citizenship: Poland (EU), Russia</p>
             </section>
 
             <section class="contacts">
                 <h3 data-key="contacts">Contacts</h3>
-                <div class="contact-item">
-                    <span data-key="phone">Phone:</span>
-                    <a href="tel:+48669678731">+48 669 678 731</a>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <span data-key="phone">Phone:</span>
+                            <a href="tel:+48669678731">+48 669 678 731</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <span data-key="email">Email:</span>
+                            <a href="mailto:azykin@gmail.com">azykin@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">💼</span>
+                        <div>
+                            <span>GitHub:</span>
+                            <a href="https://github.com/sansey2k" target="_blank">github.com/sansey2k</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <span data-key="email">Email:</span>
-                    <a href="mailto:azykin@gmail.com">azykin@gmail.com</a>
+            </section>
+
+            <section class="skills">
+                <h3 data-key="skills">Skills</h3>
+                <div class="skill-categories">
+                    <div class="skill-category">
+                        <h4 data-key="sectors">Sector Knowledge</h4>
+                        <p>Fintech, Banking, Aviation, Healthcare, Retail, Networks & Security</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-key="methodologies">PM Methodologies</h4>
+                        <p>PMBOK (certified), Agile (certified), Lean, SCRUM, SAF 5 (certified)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-key="ba">Business Analysis</h4>
+                        <p>Enterprise Architect, MS Visio, draw.io, UML, RUP, BPMN, UPC</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-key="tech">Technologies</h4>
+                        <p>Kubernetes, API, ELK, Generative AI, LAN/WAN, TCP-IP, OSI</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-key="databases">Databases</h4>
+                        <p>MS SQL, MySQL, PostgreSQL, Oracle</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4 data-key="programming">Programming</h4>
+                        <p>Python, Visual Basic, VBScript, JavaScript</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="languages">
+                <h3 data-key="languages">Languages</h3>
+                <div class="language-list">
+                    <div class="lang-item"><span class="flag">🇵🇱</span> Polish: B2</div>
+                    <div class="lang-item"><span class="flag">🇬🇧</span> English: C1</div>
+                    <div class="lang-item"><span class="flag">🇷🇺</span> Russian: Native</div>
+                    <div class="lang-item"><span class="flag">🇩🇪</span> German: A1/A2</div>
+                </div>
+            </section>
+
+            <section class="education">
+                <h3 data-key="education">Education</h3>
+                <div class="edu-item">
+                    <div class="edu-year">2013</div>
+                    <div class="edu-details">
+                        <h4 data-key="edu1-title">Postgraduate, IT Project Management</h4>
+                        <p>Moscow Social Institute</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-year">2005</div>
+                    <div class="edu-details">
+                        <h4 data-key="edu2-title">Computer Networks, Systems and Computers</h4>
+                        <p>MSTU named after Bauman (5.5 years diploma)</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certificates">
+                <h3 data-key="certificates">Trainings & Certificates</h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <span class="cert-year">2026</span> Google Project Planning
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2025</span> AI Project Management
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2023</span> Generative AI Projects
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2021</span> SAF5: Product Manager/Product Owner
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2020</span> Python for Data Modeling
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2020</span> SQL for Business Analysts
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2020</span> Product Owner
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2020</span> English C1 Writing
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-year">2018</span> PMP
+                    </div>
+                </div>
+            </section>
+
+            <section class="experience">
+                <h3 data-key="experience">Professional Experience</h3>
+                
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4 data-key="exp1-title">Project Manager</h4>
+                            <p class="exp-company">Self-employed</p>
+                        </div>
+                        <div class="exp-period">Aug 2024 – Now</div>
+                    </div>
+                    <ul class="exp-results" data-key="exp1-results">
+                        <li>Reduced IDM system costs by 63% (60K→22K) and MDM solution costs by 93% (30K→2K)</li>
+                        <li>Optimized Atlassian operational costs by 60% (5K→2K/month)</li>
+                        <li>Managed vendor analysis, system implementations (ERP, CRM, email/DNS servers)</li>
+                        <li>Led IT projects for Virtual Reality trainings (LMS, Site, MDM, AI assistant)</li>
+                        <li>Mentored AI MVP training assistant</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4 data-key="exp2-title">Senior Project Manager</h4>
+                            <p class="exp-company">Exadel Inc.</p>
+                        </div>
+                        <div class="exp-period">Sep 2022 – Jun 2024</div>
+                    </div>
+                    <ul class="exp-results" data-key="exp2-results">
+                        <li>Led multiple integration projects and dedicated teams</li>
+                        <li>Optimized project delivery with Kanban and SCRUM</li>
+                        <li>Defined scope, roadmaps, and communication for C-level stakeholders</li>
+                        <li>Managed DevOps/DBE teams (SRE, Azure, Kubernetes)</li>
+                        <li>Successfully completed 3 acquisition projects</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4 data-key="exp3-title">Senior Business Analyst / Proxy-Product Owner</h4>
+                            <p class="exp-company">Chevron</p>
+                        </div>
+                        <div class="exp-period">Jan 2021 – May 2022</div>
+                    </div>
+                    <ul class="exp-results" data-key="exp3-results">
+                        <li>Championed financial department solutions</li>
+                        <li>Designed and documented BCPO system</li>
+                        <li>Implemented UIpath/RPA solutions</li>
+                        <li>Facilitated PI planning with SAF5.0</li>
+                        <li>Delivered multiple releases on schedule</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <div>
+                            <h4 data-key="exp4-title">Senior Business Analyst / Proxy-Product Owner</h4>
+                            <p class="exp-company">EPAM</p>
+                        </div>
+                        <div class="exp-period">Jun 2019 – Nov 2020</div>
+                    </div>
+                    <ul class="exp-results" data-key="exp4-results">
+                        <li>Led 3 complex FinTech projects (Fin reporting, Payment solution, Blockchain)</li>
+                        <li>Defined scope in DeFi, Payment Solutions, Cloud domains</li>
+                        <li>Collaborated with architecture committee</li>
+                    </ul>
                 </div>
             </section>
         </main>
