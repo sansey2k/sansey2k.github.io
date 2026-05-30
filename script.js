@@ -49,6 +49,56 @@ const translations = {
             "Collaborated with architecture committee"
         ]
     },
+    de: {
+        role: "Senior Projektmanager / Business Analyst",
+        citizenship: "Staatsangehörigkeit: Polen (EU), Russland",
+        contacts: "Kontakte",
+        phone: "Telefon:",
+        email: "E-Mail:",
+        skills: "Fähigkeiten",
+        sectors: "Branchenkenntnisse",
+        methodologies: "PM-Methoden",
+        ba: "Business Analysis",
+        tech: "Technologien",
+        databases: "Datenbanken",
+        programming: "Programmierung",
+        languages: "Sprachen",
+        education: "Ausbildung",
+        "edu1-title": "Postgradual, IT-Projektmanagement",
+        "edu2-title": "Computernetzwerke, Systeme und Computer",
+        certificates: "Schulungen & Zertifikate",
+        experience: "Berufserfahrung",
+        "exp1-title": "Projektmanager",
+        "exp2-title": "Senior Projektmanager",
+        "exp3-title": "Senior Business Analyst / Proxy-Product Owner",
+        "exp4-title": "Senior Business Analyst / Proxy-Product Owner",
+        "exp1-results": [
+            "Reduzierte IDM-Systemkosten um 63% (60K→22K) und MDM-Lösung um 93% (30K→2K)",
+            "Optimiert Atlassian-Betriebskosten um 60% (5K→2K/Monat)",
+            "Gesteuerte Lieferantenanalyse, Systemimplementierungen (ERP, CRM, E-Mail/DNS)",
+            "Leitete IT-Projekte für VR-Schulungen (LMS, Website, MDM, KI-Assistent)",
+            "Mentorierte KI-MVP-Schulungsassistent"
+        ],
+        "exp2-results": [
+            "Leitete mehrere Integrationsprojekte und dedizierte Teams",
+            "Optimierte Projektabwicklung mit Kanban und SCRUM",
+            "Definierte Umfang, Roadmaps und Kommunikation für C-Level-Stakeholder",
+            "Verwaltete DevOps/DBE-Teams (SRE, Azure, Kubernetes)",
+            "Erfolgreich abgeschlossen 3 Akquisitionsprojekte"
+        ],
+        "exp3-results": [
+            "Förderte Lösungen der Finanzabteilung",
+            "Entwarf und dokumentierte BCPO-System",
+            "Implementierte UIpath/RPA-Lösungen",
+            "Moderierte PI-Planung mit SAF5.0",
+            "Lieferte mehrere Releases pünktlich"
+        ],
+        "exp4-results": [
+            "Leitete 3 komplexe FinTech-Projekte",
+            "Definierte Umfang in DeFi-, Zahlungslösungs-, Cloud-Domänen",
+            "Zusammenarbeit mit Architekturausschuss"
+        ]
+    },
     ru: {
         role: "Старший менеджер проектов / Бизнес-аналитик",
         citizenship: "Гражданство: Польша (ЕС), Россия",
@@ -148,71 +198,14 @@ const translations = {
             "Definiował zakres w domenach DeFi, rozwiązań płatniczych, chmurowych",
             "Współpracował z komitetem architektonicznym"
         ]
-    },
-    de: {
-        role: "Senior Projektmanager / Business Analyst",
-        citizenship: "Staatsangehörigkeit: Polen (EU), Russland",
-        contacts: "Kontakte",
-        phone: "Telefon:",
-        email: "E-Mail:",
-        skills: "Fähigkeiten",
-        sectors: "Branchenkenntnisse",
-        methodologies: "PM-Methoden",
-        ba: "Business Analysis",
-        tech: "Technologien",
-        databases: "Datenbanken",
-        programming: "Programmierung",
-        languages: "Sprachen",
-        education: "Ausbildung",
-        "edu1-title": "Postgradual, IT-Projektmanagement",
-        "edu2-title": "Computernetzwerke, Systeme und Computer",
-        certificates: "Schulungen & Zertifikate",
-        experience: "Berufserfahrung",
-        "exp1-title": "Projektmanager",
-        "exp2-title": "Senior Projektmanager",
-        "exp3-title": "Senior Business Analyst / Proxy-Product Owner",
-        "exp4-title": "Senior Business Analyst / Proxy-Product Owner",
-        "exp1-results": [
-            "Reduzierte IDM-Systemkosten um 63% (60K→22K) und MDM-Lösung um 93% (30K→2K)",
-            "Optimiert Atlassian-Betriebskosten um 60% (5K→2K/Monat)",
-            "Gesteuerte Lieferantenanalyse, Systemimplementierungen (ERP, CRM, E-Mail/DNS)",
-            "Leitete IT-Projekte für VR-Schulungen (LMS, Website, MDM, KI-Assistent)",
-            "Mentorierte KI-MVP-Schulungsassistent"
-        ],
-        "exp2-results": [
-            "Leitete mehrere Integrationsprojekte und dedizierte Teams",
-            "Optimierte Projektabwicklung mit Kanban und SCRUM",
-            "Definierte Umfang, Roadmaps und Kommunikation für C-Level-Stakeholder",
-            "Verwaltete DevOps/DBE-Teams (SRE, Azure, Kubernetes)",
-            "Erfolgreich abgeschlossen 3 Akquisitionsprojekte"
-        ],
-        "exp3-results": [
-            "Förderte Lösungen der Finanzabteilung",
-            "Entwarf und dokumentierte BCPO-System",
-            "Implementierte UIpath/RPA-Lösungen",
-            "Moderierte PI-Planung mit SAF5.0",
-            "Lieferte mehrere Releases pünktlich"
-        ],
-        "exp4-results": [
-            "Leitete 3 komplexe FinTech-Projekte",
-            "Definierte Umfang in DeFi-, Zahlungslösungs-, Cloud-Domänen",
-            "Zusammenarbeit mit Architekturausschuss"
-        ]
     }
 };
 
 const flagMap = {
     en: "🇬🇧",
+    de: "🇩🇪",
     ru: "🇷🇺",
-    pl: "🇵🇱",
-    de: "🇩🇪"
-};
-
-const langCodeMap = {
-    en: "EN",
-    ru: "RU",
-    pl: "PL",
-    de: "DE"
+    pl: "🇵🇱"
 };
 
 function setLanguage(lang) {
@@ -230,14 +223,10 @@ function setLanguage(lang) {
         }
     });
 
-    // Update dropdown button
+    // Update dropdown button flag
     const dropdownBtn = document.getElementById('langDropdownBtn');
     const flagSpan = dropdownBtn.querySelector('.flag');
     flagSpan.textContent = flagMap[lang];
-    const textNode = flagSpan.nextSibling;
-    if (textNode && textNode.nodeType === Node.TEXT_NODE) {
-        textNode.textContent = ` ${langCodeMap[lang]}`;
-    }
 
     document.documentElement.lang = lang;
     localStorage.setItem('preferredLanguage', lang);
