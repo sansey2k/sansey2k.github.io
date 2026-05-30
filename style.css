@@ -185,12 +185,9 @@ section h3 {
 
 .contacts .icon {
     font-size: 1.5rem;
-}
-
-.contact-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contacts a {
